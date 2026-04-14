@@ -19,8 +19,11 @@ public class Exercicio8 {
         }
 
         for (int i = 0; i < numeros.toArray().length ; i++) {
-
-
+            String numero = numeros.get(i);
+            char ultimoDigito = numero.charAt(numero.length() - 1);
+            if ( ultimoDigito != '5'){
+                System.out.print(" " + numero + " ");
+            }
         }
 
     }
